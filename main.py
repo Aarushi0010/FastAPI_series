@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from typing import Optional
+from pydantic import BaseModel
 
 app = FastAPI()
 
@@ -22,3 +23,14 @@ def query(limit = 10 ,published :bool = True ,sort : Optional[str] = None ):
     
     else :
         return {'data' : f'{limit} blogs from db'}
+    
+
+class Content(BaseModel):
+    title : str
+    body : str
+    published : Optional[bool]
+
+
+@app.post('/content')
+def content(request : Content):
+    return {f'content added with title {request.title}'}

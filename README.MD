@@ -21,3 +21,10 @@
 - we can pass path parameters like {id} but also to make sure we pass them in function as (id) for them to be directed to that path 
 - Just like that we can also pass query parameters and we usually do that by starting the query with '?' in the url and also setting the desired parameters in the function of that path 
 - refer to query function in main.py file for this 
+
+### Request Body 
+- for request body i.e creating a post request we need to import BaseModel from 'pydantic model'
+- using this we can create a class to define what are the necessary values needed during function execution
+- make sure to make a request from BaseModel in the function extract things in it
+- we can refer to variables using '.' operator 
+- refer to 'content class' and 'content function' for this 
