@@ -16,3 +16,8 @@
 - - '/' represents the path or more specifically the route to which the user is directed according to there needs . while '/' represents the root path , we could add different paths in the application with there respective name. 
 - - .get() reperesents the operation on the path. we can also have other operations like post , delete or put
 - - below the operation comes the path operation function defining what function will be applied when the directed path is opened. 
+
+### Path and Query parameters 
+- we can pass path parameters like {id} but also to make sure we pass them in function as (id) for them to be directed to that path 
+- Just like that we can also pass query parameters and we usually do that by starting the query with '?' in the url and also setting the desired parameters in the function of that path 
+- refer to query function in main.py file for this 
