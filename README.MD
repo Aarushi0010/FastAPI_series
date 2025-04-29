@@ -37,3 +37,4 @@
 - 1. created an engine with the URL of sqlite database
 - 2. added the declarative base 
 - 3. added the sessionmaker 
+- - for this you can refer to this documentation : https://docs.sqlalchemy.org/en/13/orm/tutorial.html#connecting
