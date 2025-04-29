@@ -38,3 +38,11 @@
 - 2. added the declarative base 
 - 3. added the sessionmaker 
 - - for this you can refer to this documentation : https://docs.sqlalchemy.org/en/13/orm/tutorial.html#connecting
+
+### creating a table (model):
+- obvious we have to create models.py file 
+- add columns and also give name to table(imp)
+- make sure to import the engine and database in the main.py file
+- good question : what does create_all(engine) do ?? 
+- - metadata. create_all(engine) to create the corresponding table in the database. The connection between the Declarative Base ( Base ) and Metadata ( metadata ) is established through the Base. metadata attribute, which allows SQLAlchemy to work with metadata and create database tables based on the ORM model definitions.
+
