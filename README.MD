@@ -28,3 +28,12 @@
 - make sure to make a request from BaseModel in the function extract things in it
 - we can refer to variables using '.' operator 
 - refer to 'content class' and 'content function' for this 
+
+### Database connection
+- Before this make sure you have added the schema i.e shifted the model class to schemas.py file 
+- for establishing database , make sure to install sqlalchemy in virtualenv
+- make sure you have database.py file in the content folder and a content.db file in the root directory 
+- the main steps : 
+- 1. created an engine with the URL of sqlite database
+- 2. added the declarative base 
+- 3. added the sessionmaker 
