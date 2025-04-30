@@ -6,5 +6,5 @@ class Content(Base):
 
     __tablename__ = 'content'
     id = Column(Integer, primary_key=True)
-    name = Column(String)
+    # title = Column(String)
     body = Column(String)
