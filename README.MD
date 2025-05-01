@@ -46,3 +46,11 @@
 - good question : what does create_all(engine) do ?? 
 - - metadata. create_all(engine) to create the corresponding table in the database. The connection between the Declarative Base ( Base ) and Metadata ( metadata ) is established through the Base. metadata attribute, which allows SQLAlchemy to work with metadata and create database tables based on the ORM model definitions.
 
+### add & get content from databse
+- to **add** content make a post request, connect to session using Depends 
+- need of helper function that will connect to databse using "sessionLocal" 
+- add statements - add , commit and refersh and then return the added content
+- to **get** content , make a get request to database
+- pass the db session as parameter to function 
+- add a db.query to models with all() filter 
+
