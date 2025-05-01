@@ -25,3 +25,17 @@ def content(request : schemas.Content , db : session = Depends(get_db)):
     db.commit()
     db.refresh(new_content)
     return new_content
+
+
+#return ALL contents 
+@app.get('/content')
+def getContent(db : session = Depends(get_db)):
+    content= db.query(models.Content).all()
+    return content 
+
+
+#return FILTERED content using id
+@app.get('/blog/{id}')
+def getBlog(id, db : session = Depends(get_db)):
+    blog = db.query(models.Content).filter(models.Content.id == id).first()
+    return blog 
